@@ -5,8 +5,8 @@
 CREATE TABLE "campaign" (
     "cf_id" INT   NOT NULL,
     "contact_id" INT   NOT NULL,
-    "company_name" VARCHAR(30)   NOT NULL,
-    "description" VARCHAR(56)   NOT NULL,
+    "company_name" VARCHAR(50)   NOT NULL,
+    "description" VARCHAR(70)   NOT NULL,
     "goal" REAL   NOT NULL,
     "pledged" REAL   NOT NULL,
     "outcome" VARCHAR(10)   NOT NULL,
@@ -32,9 +32,9 @@ CREATE TABLE "category" (
 
 CREATE TABLE "contacts" (
     "contact_id" INT   NOT NULL,
-    "first_name" VARCHAR(20)   NOT NULL,
-    "last_name" VARCHAR(20)   NOT NULL,
-    "email" VARCHAR(30)   NOT NULL,
+    "first_name" VARCHAR(40)   NOT NULL,
+    "last_name" VARCHAR(40)   NOT NULL,
+    "email" VARCHAR(50)   NOT NULL,
     CONSTRAINT "pk_contacts" PRIMARY KEY (
         "contact_id"
      )
